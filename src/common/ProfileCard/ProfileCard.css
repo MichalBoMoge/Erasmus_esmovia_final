@@ -1,0 +1,25 @@
+.profile-card{
+    height: 30vh;
+}
+
+.img-holder{
+    height: 100%;
+}
+
+.stars-cont{
+    height: 3vh;
+}
+
+.par-desc{
+    text-align: left;
+}
+
+.content{
+    position: relative;
+}
+
+.rmv{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}

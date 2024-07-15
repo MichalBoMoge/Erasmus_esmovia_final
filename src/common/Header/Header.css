@@ -1,0 +1,25 @@
+.header-design{
+    height: 6vh;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    padding-right: 2rem;
+
+}
+
+.profile-surfers{
+    display: contents;
+}
+
+.inputHeader{
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,41 @@
+.product-site-design{
+    min-height: 86vh;
+    margin-top: 6vh;
+}
+
+
+.product-holder{
+    height: 70vh;
+    position: relative;
+}
+.product-image{
+    width: 50%;
+    height: 100%;
+}
+
+.product-desc{
+    width: 50%;
+}
+
+.img-fluid{
+    height: 100%;
+}
+
+.dsc{
+    font-weight: bold;
+}
+
+.get-back{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 4vh;
+}
+
+.price{
+    margin-right: 2rem;
+}
+
+.stars-cont-prod{
+    height: 5vh;
+}
