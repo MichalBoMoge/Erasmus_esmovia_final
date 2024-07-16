@@ -4,7 +4,7 @@ import CInput from "../../common/CInput/CInput";
 import "./Login.css"
 import { myContext } from "../../app/ProviderContextComponent";
 import {LoginMe} from "../../services/api-calls"
-import { Credentials, Answer } from "../../interfaces";
+import { Credentials} from "../../interfaces";
 
 const Login: React.FC = () => {
 
@@ -27,11 +27,11 @@ const Login: React.FC = () => {
     }
     const navigate = useNavigate();
     const loginFunction = async (): Promise<any> => {
-        const fetched: Answer = await LoginMe(credentials)
+     await LoginMe(credentials)
             .then(res => {
                 setUser({
-                      name: res.username,
-                      token: res.token
+                      name: res.data.name,
+                      token: res.data.password
                   });
                   navigate("/profile")
 

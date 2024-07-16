@@ -1,10 +1,10 @@
-import { Answer, ProductInt, Credentials} from "../interfaces";
+import { AnswerProducts, AnswerUser, ProductInt, Credentials} from "../interfaces";
 
 const root1: string = "https://fakestoreapi.com/";
 const root2: string = "https://dummyjson.com/";
 
 
-export async function bringCharacters(): Promise<Answer> {
+export async function bringCharacters(): Promise<AnswerProducts> {
   try {
     const response: any = await fetch(`${root1}products`);
 
@@ -16,7 +16,7 @@ export async function bringCharacters(): Promise<Answer> {
 
     const rawData: ProductInt[] = await response.json();
     console.log(rawData);
-    const data: Answer = {
+    const data: AnswerProducts = {
       message: "Data properly fetched",
       success: true,
       data: rawData,
@@ -24,7 +24,7 @@ export async function bringCharacters(): Promise<Answer> {
 
     return data;
   } catch (error: any) {
-    const errorAnswer: Answer = {
+    const errorAnswer: AnswerProducts = {
       message: error,
       success: false,
       data: []
@@ -36,7 +36,7 @@ export async function bringCharacters(): Promise<Answer> {
 
 
 
-export async function LoginMe(credentials:Credentials): Promise<Answer> {
+export async function LoginMe(credentials:Credentials): Promise<AnswerUser> {
 
 
 let rawData = await fetch(`${root2}auth/login`, {
@@ -49,7 +49,15 @@ let rawData = await fetch(`${root2}auth/login`, {
   }),
 });
 
-let data = await rawData.json();
+let dataJs = await rawData.json();
+
+
+const data: AnswerUser = {
+  message: "Data properly fetched",
+  success: true,
+  data: dataJs,
+};
+
 return data;
 
 

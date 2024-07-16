@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { Answer, ProductInt } from "../../interfaces";
+import { AnswerProducts, ProductInt } from "../../interfaces";
 import {bringCharacters} from "../../services/api-calls";
 import "./Home.css";
 import CCard from "../../common/CCard/CCard";
@@ -18,7 +18,7 @@ function Home() {
   useEffect(() => {
     if (characters?.length === 0) {
       const fetchDataRickMorty = async (): Promise<any> => {
-        const fetched: Answer = await bringCharacters();
+        const fetched: AnswerProducts = await bringCharacters();
 
         if (fetched.success) {
           setFlag(true);

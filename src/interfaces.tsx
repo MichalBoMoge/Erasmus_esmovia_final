@@ -1,10 +1,15 @@
 
-export interface Answer {
+export interface AnswerUser {
     message: string,
     success: boolean,
-    data: ProductInt[] | Credentials
+    data: Credentials
 }
 
+export interface AnswerProducts {
+  message: string,
+  success: boolean,
+  data: ProductInt[]
+}
 
 
 export interface CInputInt {
