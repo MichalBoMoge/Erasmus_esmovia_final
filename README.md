@@ -1,18 +1,16 @@
-[![Contributors][contributors-shield]][contributors-url]
-
-<h3 align="center">ONE SITE PAGE</h3>
+<h3 align="center">SPA Project</h3>
 
   <p align="center">
-    One site page with info about League Of Legends champions.
+    Single Page Application of fake web store
     <br />
-    <a href="https://github.com/noiceya/final-project"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/michalbomoge/Erasmus_esmovia_final"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/noiceya/final-project">View Demo</a>
+    <a href="https://github.com/michalbomoge/Erasmus_esmovia_final">View Demo</a>
     ·
-    <a href="https://github.com/noiceya/final-project/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/michalbomoge/Erasmus_esmovia_final/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/noiceya/final-project/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/michalbomoge/Erasmus_esmovia_final/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -45,7 +43,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-One site page with usage of League Of Legends API. Final project for REACT course.
+My project is a fake web store, which i created using react, typescript and bootstrap.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -58,7 +56,8 @@ One site page with usage of League Of Legends API. Final project for REACT cours
 * ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 * [![HTML](https://img.shields.io/badge/HTML-AAA333?style=for-the-badge&logo=html&logoColor=white)]()
 * [![CSS](https://img.shields.io/badge/CSS-348ceb?style=for-the-badge&logo=css&logoColor=white)]()
-* League Of Legends API
+* fakestoreapi.com
+* dummyjson.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,7 +80,7 @@ To run this project you must meet the following requirements.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/noiceya/final-project.git
+   git clone https://github.com/michalbomoge/Erasmus_esmovia_final.git
    ```
 2. Install NPM packages
    ```sh
@@ -103,18 +102,16 @@ To run this project you must meet the following requirements.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-![image](https://github.com/user-attachments/assets/78c65147-ab6f-46bd-9c8a-7d245e136a84)
+![image](https://github.com/user-attachments/assets/ad4bd6af-ae8b-4e05-8443-3e1d8f7e7588)
+![image](https://github.com/user-attachments/assets/61677071-eb2c-421f-bad3-0666b576c9fe)
 
-![image](https://github.com/user-attachments/assets/b61c5ef6-b9dc-4dd0-bfa3-c5a723a52634)
-
-![image](https://github.com/user-attachments/assets/7a1a40a0-8461-4f92-a2a4-5ec9fffa0c8b)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- CONTACT -->
 ## Contact
-Project Link: [https://github.com/noiceya/final-project](https://github.com/noiceya/final-project)
+Project Link: [https://github.com/michalbomoge/Erasmus_esmovia_final](https://github.com/michalbomoge/Erasmus_esmovia_final)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,8 +119,8 @@ Project Link: [https://github.com/noiceya/final-project](https://github.com/noic
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/noiceya/final-project.svg?style=for-the-badge
-[contributors-url]: https://github.com/noiceya/final-project/graphs/contributors
+[contributors-shield]: https://img.shields.io/github/contributors/michalbomoge/Erasmus_esmovia_final.svg?style=for-the-badge
+[contributors-url]: https://github.com/michalbomoge/Erasmus_esmovia_final/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
 [forks-url]: https://github.com/github_username/repo_name/network/members
 [stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
