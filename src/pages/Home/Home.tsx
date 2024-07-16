@@ -12,7 +12,7 @@ function Home() {
   const [flag, setFlag] = useState<boolean>(false);
   const [msgError, setMsgError] = useState<string>("");
   const navigate = useNavigate()
-  const {user,setUser,searchCriteria} = useContext(myContext)
+  const {setUser} = useContext(myContext)
 
 
   useEffect(() => {

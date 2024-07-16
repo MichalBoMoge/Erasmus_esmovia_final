@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { myContext } from "../../app/ProviderContextComponent";
 import CInput from "../CInput/CInput";
 function Header() {
-  const {user, products,logout,searchCriteria,setSearchCriteria, }= useContext(myContext);
+  const {user,logout,searchCriteria,setSearchCriteria, }= useContext(myContext);
 
 
 

@@ -5,7 +5,7 @@ import Stars from "../Stars/Starts";
 import { useContext } from "react";
 import { myContext } from "../../app/ProviderContextComponent";
 const ProfileCard: React.FC<PCardInt> = ({ product }) => {
-    const {products,removeProduct} = useContext(myContext)
+    const {removeProduct} = useContext(myContext)
     var StarsNr: number = Math.round(product.rating.rate)
     let price = product.price
     function formatPrice(price: number): string {

@@ -29,11 +29,6 @@ export interface ContextValue {
   logout: LogoutType
 }
 
-export const myContext = createContext<ContextValue | null>(null);
-
-interface MyContextProviderProps{
-    children:React.ReactNode
-}
 
 export const initialProd: ProductInt = {
   id: 0,
@@ -59,6 +54,22 @@ const initialUser: User = {
 
 const initialProducts: ProductInt[] = [];
 
+const initialContext: ContextValue = {
+  user: initialUser,
+  products: initialProducts,
+  searchCriteria: '',
+  setUser: () => {},
+  setSearchCriteria: () => {},
+  addProduct: () => {},
+  removeProduct: () => {},
+  logout: () => {},
+};
+
+export const myContext = createContext<ContextValue>(initialContext);
+
+interface MyContextProviderProps{
+    children:React.ReactNode
+}
 
 export const MyProvider: React.FC<MyContextProviderProps> = ({ children }) => {
   const [user, setUserState] = useState<User>(initialUser);

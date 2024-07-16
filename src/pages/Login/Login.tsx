@@ -8,7 +8,7 @@ import { Credentials, Answer } from "../../interfaces";
 
 const Login: React.FC = () => {
 
-    const {user, setUser, logout}= useContext(myContext)
+    const {setUser}= useContext(myContext)
 
     const [credentials, setCredentials] = useState<Credentials>({
         name: "",
