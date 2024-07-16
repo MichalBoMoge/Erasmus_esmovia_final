@@ -12,7 +12,7 @@ function Home() {
   const [flag, setFlag] = useState<boolean>(false);
   const [msgError, setMsgError] = useState<string>("");
   const navigate = useNavigate()
-  const {setUser} = useContext(myContext)
+  const {setUser, searchCriteria} = useContext(myContext)
 
 
   useEffect(() => {
@@ -23,6 +23,7 @@ function Home() {
         if (fetched.success) {
           setFlag(true);
           setCharacters(fetched.data);
+          console.log(searchCriteria)
         } else {
           setMsgError(fetched.message);
         }
@@ -34,7 +35,21 @@ function Home() {
     }
   }, [characters]);
 
-  
+
+  const filterProducts = (products: ProductInt[], searchCriteria: string): ProductInt[] => {
+    if (!searchCriteria) {
+      return products;
+    }
+    return products.filter(product =>
+      product.title.toLowerCase().includes(searchCriteria.toLowerCase())
+    );
+  };
+
+  useEffect(() => {
+    const result = filterProducts(characters, searchCriteria);
+    setCharacters(result);
+  }, [characters, searchCriteria]);
+
 
   const selectProduct = (product : ProductInt) =>{
     setUser({
