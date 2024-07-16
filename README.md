@@ -44,7 +44,7 @@
 ## About The Project
 
 My project is a fake web store, which i created using react, typescript and bootstrap.
-
+INCOMING: SEARCHING PRODUCTS!!!! 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
